@@ -22,11 +22,13 @@ Identify control points that have been observed through GPS.
 
 Identify control points that have been established through resection.
 
-Identify control points by finding points that were observed from 2 or more stations. (In some high precision surveys I've been involved with, we don't set up over control points (thus avoiding instrument centring error.))
+Identify control points by finding points that were observed from 2 or more stations. (In some high precision surveys
+I've been involved with, we don't set up over control points (thus avoiding instrument centring error.))
 
 Identify possible point naming errors (through inconsistent calculated XYZ position.)
 
-Compare redundant observations [thus avoiding duplicate points] and flag observations that have a standard error that does not meet user's defined minimum standard error.
+Compare redundant observations [thus avoiding duplicate points] and flag observations that have a standard error
+that does not meet user's defined minimum standard error.
 
 Compare point code against a dictionary of user defined point codes.
 
@@ -47,3 +49,15 @@ Read a variety of field book formats.
 Write to a variety of field book formats.
 
 Create a robust user / program dialog that walks the user through each step. Assume a complete novice user.
+
+---
+
+Getting started with the source FBK file and an -edit.FBK file to protect the original:
+
+We want to save a copy of this file with -edit.fbk or something like that - because we're going to make edits - 
+the software will do things automatically, but will work with the user interactively where necessary.
+The errors in the data collection are fixed while using our application - these changes are saved in the -edit file.
+The -edit file is used to generate the control network FBK, and later when we get to it, also the sideshots FBK file.
+We might as well have the application do this step of duplicating the raw FBK file (making the new -edit file) so the
+user has one less step to do. (This behaviour - for example the suffix to use - can be customized in a config file.)
+
