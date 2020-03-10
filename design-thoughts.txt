@@ -1,0 +1,8 @@
+We want to save a copy of this file with -edit.fbk or something like that - because we're going to make edits - the software will do things automatically, but will work with the user interactively where necessary.
+
+The errors in the data collection are fixed while using our application - these changes are saved in the -edit file.
+
+The -edit file is used to generate the control network FBK, and later when we get to it, also the sideshots FBK file.
+
+We might as well have the application do this step of duplicating the raw FBK file (making the new -edit file) so the user has one less step to do. (This behaviour - for example the suffix to use - can be customized in a config file.)
+

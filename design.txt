@@ -1,0 +1,49 @@
+Field Book Extraction Utility
+
+Design Doc
+
+Design Goal:
+Create a small, desktop based utility that will extract the control network 
+from a survey field book file. The end result of using the utility should be 
+an output of two separate field book files. One file will contain only the 
+control network, the other file will contain all of the side shots. The 
+utility should check each recorded observation and determine if it is useful 
+for improving the accuracy of the control network. The utility should be able 
+to recognize mislabled observations, GPS observations, low quality 
+observations, and bad "busted" observations.
+
+Functions:
+
+Identify control points by checking that they were occupied by total station and side shots were taken from the location.
+
+Identify control points that have fixed coordinates that have been maually entered.
+
+Identify control points that have been observed through GPS.
+
+Identify control points that have been established through resection.
+
+Identify control points by finding points that were observed from 2 or more stations. (In some high precision surveys I've been involved with, we don't set up over control points (thus avoiding instrument centring error.))
+
+Identify possible point naming errors (through inconsistent calculated XYZ position.)
+
+Compare redundant observations [thus avoiding duplicate points] and flag observations that have a standard error that does not meet user's defined minimum standard error.
+
+Compare point code against a dictionary of user defined point codes.
+
+Allow user to add to dictionary as part of the extraction process.
+
+Detect and help the user fix target height errors or omissions.
+
+Identify observations that are meant to be drafted as a linear feature such as break lines, roadway edges, house corners, etc...
+
+Identify observations that are meant to be drafted as a symbolic feature such as manholes, utility poles, catch basins, etc...
+
+Offer the user the ability to enter or modify codes, descriptions, annotations, and notes as part of the extraction process.
+
+Format observation data such that code, description, annotations, and notes are in a machine readable order.
+
+Read a variety of field book formats.
+
+Write to a variety of field book formats.
+
+Create a robust user / program dialog that walks the user through each step. Assume a complete novice user.
