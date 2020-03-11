@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsAppTest
+namespace FieldbookCleaner
 {
     static class Program
     {

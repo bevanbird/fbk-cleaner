@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsAppTest
+﻿namespace FieldbookCleaner
 {
     partial class Form1
     {
