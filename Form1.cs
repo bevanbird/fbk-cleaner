@@ -39,7 +39,7 @@ namespace FieldbookCleaner
                 string file = openFileDialog1.FileName;
                 try
                 {
-                    string text = File.ReadAllText(file);
+                    string text = "This is the ORIGINAL FBK file:\n" + File.ReadAllText(file);
                     size = text.Length;
                     textBox1.Text = text;
                 }
