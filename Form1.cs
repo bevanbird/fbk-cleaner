@@ -49,5 +49,10 @@ namespace FieldbookCleaner
             }
             Console.WriteLine(result); // <-- For debugging use.
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "";
+        }
     }
 }
